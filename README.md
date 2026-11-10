@@ -1,39 +1,56 @@
-#  Hiisi – devlog
+# Hiisi – devlog
 
-Project Hiisi – suunnitelman tiivistelmä
-Konsepti: PvE-selviytymispeli 1–4 pelaajalle, joka yhdistää Valheimin etenemisrakenteen ja Sons of the Forestin kauhun. Pelin identiteetti rakentuu suomalaiseen kansanperinteeseen ja Kalevalaan.
-Visuaalinen ilme
-Maalauksellinen realismi: realistiset mittasuhteet ja käsin maalatun näköiset tekstuurit.
-Paletti suomalaisesta luonnosta: sammal, jäkälä, suo, kaamos ja ruska.
-Pohjoisen valo tunnusmerkkinä: yötön yö, kaamos ja revontulet.
-Kauhu syntyy kansanuskosta, kuten metsänpeitosta, eikä goresta. Tunnelma tummenee pelin edetessä.
-Biomit ja bossit
-Kangasmetsä: Hiiden hirvi
-Korpi: Ajattara
-Aapasuo: Lempo
-Järviylänkö: Iku-Turso
-Tunturi / Pohjola: Louhi
-Tuonela: Hiisi
-Eteneminen synnyillä
-Bossi pudottaa esineen, joka uhrataan kotileirin kalliolle. Kallioon ilmestyy kalliomaalaus, ja synty on opittu koko maailmalle, mikä toimii myös co-opissa.
-Synty avaa seuraavan biomin rajan: metsänpeitto, suo, vesi, pakkanen ja lopulta Tuonelan joki.
-Rajat ovat pehmeitä eivätkä näkymättömiä seiniä. Ensimmäinen vain eksyttää, myöhemmät ovat vaarallisia.
-Päämanner on yhtenäinen. Pohjola sijaitsee meren takana, ja sinne tarvitaan vene. Tuonela on oma alueensa joen takana.
-Kantele on aktiivinen kyky: jokainen synty lisää siihen kielen, ja loppupelin rajat vaativat soittamista.
-Pelattavuus ja kesto (yli 80 h)
-Biomien kesto kasvaa 6–8 tunnista Tuonelan yli 20 tuntiin.
-Jokainen biomi parantaa gearia kaikille rooleille (soturi, metsästäjä, tietäjä). Tärkeitä virstanpylväitä ovat suomalmista saatava rauta, hauenluukantele ja Ilmarisen paja.
-Kylään hyökkäävät avattujen biomien mobit. Vaikeus skaalautuu pelaajamäärän mukaan loivasti, ja puolustusrakentaminen on itsessään sisältöä.
-Lisäsisältöä tuovat hiidenkirnut luolina, proseduraalinen maailma ja kokkaaminen buffeineen.
+Moi! Tämä on kehityspäiväkirja pelistä, jota teen työnimellä **Project Hiisi**.
 
-Kehityspäiväkirja PC:lle tulevasta co-op-selviytymispelistä (työnimi *Project Hiisi*).
+Hiisi on PC:lle tuleva selviytymispeli 1–4 pelaajalle. Etenemisen malli on otettu Valheimista ja kauhun tunnelma Sons of the Forestista, mutta kaikki muu on suomalaista: metsät, suot, kansanusko ja Kalevala. Pelissä rakennetaan kylä, puolustetaan sitä ja edetään kohti Pohjolaa ja lopulta Tuonelaa.
 
-- **Tekniikka:** Unity 6 (URP), Netcode for GameObjects, ensimmäinen persoona
-- **Lähdekoodi:** yksityinen. Tässä repossa on vain edistymisen kuvaus.
+Lähdekoodi on yksityinen, mutta kirjaan tänne, mitä kulloinkin teen, mikä onnistui ja mikä meni pieleen.
 
 ## Merkinnät
 
-| Päivä | Aiheet |
+| Päivä | Mitä tein |
 |---|---|
-| [2026-11-09](devlog/2026-11-09.md) | Saari, päivä–yö, kasvillisuus, keräily, työkalut, hahmo, rakentaminen |
-| [2026-11-08](devlog/2026-11-08.md) | Projektin aloitus, verkkopelin pohja |
+| [9.11.2026](devlog/2026-11-09.md) | Iso päivä: maailma, päivä ja yö, metsät, puunkaato, työkalut, hahmo ja rakentaminen |
+| [8.11.2026](devlog/2026-11-08.md) | Projekti käyntiin ja ensimmäinen moninpeli toimii |
+
+---
+
+## Millaista peliä teen?
+
+### Tunnelma
+
+Tavoittelen maalauksellista realismia: mittasuhteet ovat realistiset, mutta pinnat näyttävät käsin maalatuilta. Värit tulevat suomalaisesta luonnosta: sammal, jäkälä, suo, ruska ja kaamos. Valo on pelin tunnusmerkki, sillä vuorossa ovat yötön yö, kaamoksen pimeys ja revontulet.
+
+Kauhu ei tule verestä vaan kansanuskosta. Metsänpeittoon voi joutua, ja jokin liikkuu puiden välissä. Mitä pidemmälle pääsee, sitä synkemmäksi maailma muuttuu.
+
+### Biomit ja niiden haltijat
+
+| Biomi | Bossi |
+|---|---|
+| Kangasmetsä | Hiiden hirvi |
+| Korpi | Ajattara |
+| Aapasuo | Lempo |
+| Järviylänkö | Iku-Turso |
+| Tunturi ja Pohjola | Louhi |
+| Tuonela | Hiisi |
+
+Päämanner on yhtenäinen. Pohjolaan pääsee vain veneellä meren yli, ja Tuonela odottaa joen toisella puolella.
+
+### Eteneminen synnyillä
+
+Kun bossi kaatuu, siltä jää esine, joka uhrataan kotileirin kalliolle. Kallioon piirtyy kalliomaalaus, ja pelaajat oppivat **synnyn** eli tiedon siitä, mistä jokin on saanut alkunsa. Synty on yhteinen koko maailmalle, joten co-opissa kukaan ei jää jälkeen.
+
+Jokainen synty avaa seuraavan biomin rajan. Ensin vastassa on metsänpeitto, sitten suo, vesi ja pakkanen ja lopuksi Tuonelan joki. Rajat eivät ole näkymättömiä seiniä: ensimmäinen vain eksyttää, myöhemmät ovat oikeasti vaarallisia.
+
+Mukana kulkee **kantele**. Jokainen synty lisää siihen kielen, ja loppupään rajoista pääsee yli vain soittamalla.
+
+### Mitä pelissä tehdään?
+
+- **Rakennetaan ja puolustetaan kylää.** Avattujen biomien olennot hyökkäävät kylään, joten puolustuksen rakentaminen on oma osa peliä. Vaikeus kasvaa loivasti pelaajamäärän mukaan.
+- **Kehitetään varusteita.** Jokainen biomi tuo parempaa varustusta kaikille rooleille: soturille, metsästäjälle ja tietäjälle. Tärkeitä virstanpylväitä ovat suomalmista sulatettu rauta, hauenluukantele ja Ilmarisen paja.
+- **Tutkitaan maailmaa.** Hiidenkirnuista löytyy luolia, maailma luodaan proseduraalisesti, ja kokkaamalla saa hyödyllisiä buffeja.
+- **Pelataan pitkään.** Yksi läpipeluu kestää yli 80 tuntia. Ensimmäisissä biomeissa viihtyy 6–8 tuntia, Tuonelassa yli 20.
+
+---
+
+<sub>Tehty Unity 6:lla (URP). Moninpeli toimii Netcode for GameObjectsilla. Nimi ja kaikki muukin voi vielä muuttua.</sub>
