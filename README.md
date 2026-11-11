@@ -10,6 +10,7 @@ Lähdekoodi on yksityinen, mutta kirjaan tänne, mitä kulloinkin teen, mikä on
 
 | Päivä | Mitä tein |
 |---|---|
+| [11.11.2026](devlog/2026-11-11.md) | Maailma kasvoi ja maa antaa periksi: 20 km:n saaristo, kaivaminen, luolat ja lapion maanmuokkaus |
 | [10.11.2026](devlog/2026-11-10.md) | Saari puree takaisin: suunnitelma, Hiidenkätyri ja yöhyökkäykset, taistelu, ruoka, sänky, arkut ja tallennus |
 | [9.11.2026](devlog/2026-11-09.md) | Iso päivä: maailma, päivä ja yö, metsät, puunkaato, työkalut, hahmo ja rakentaminen |
 | [8.11.2026](devlog/2026-11-08.md) | Projekti käyntiin ja ensimmäinen moninpeli toimii |
